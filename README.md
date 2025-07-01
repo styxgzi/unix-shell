@@ -72,7 +72,7 @@ python3 myshell.py script.sh
 
 ## Running Tests
 ```sh
-python3 -m unittest unix/tests/test_shell.py
+pytest tests
 ```
 
 ## Customization

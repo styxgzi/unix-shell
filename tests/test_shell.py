@@ -2,10 +2,12 @@
 test_shell.py - Test suite for the advanced Python shell.
 """
 import unittest
-from unix.parser import CommandParser
-from unix.builtins import Builtins
-from unix.plugins import load_plugins
-import tempfile, shutil, os
+from parser import CommandParser
+from shell_builtins import Builtins
+from plugins import load_plugins
+import tempfile
+import shutil
+import os
 
 class TestShell(unittest.TestCase):
     def setUp(self):

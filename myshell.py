@@ -6,9 +6,9 @@ A feature-rich Unix-like shell implemented in Python for learning and custom aut
 See README.md for features and limitations.
 """
 
-from unix.parser import CommandParser
+from parser import CommandParser
 from executor import CommandExecutor
-from unix.builtins import Builtins
+from shell_builtins import Builtins
 from jobcontrol import JobControl
 from history import HistoryManager
 from completion import CompletionEngine
@@ -21,7 +21,7 @@ import readline
 import glob
 import signal
 import re
-from unix.plugins import load_plugins
+from plugins import load_plugins
 import time
 
 # Plugin system
